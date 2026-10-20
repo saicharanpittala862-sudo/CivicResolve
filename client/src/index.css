@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/* Editorial tokens: cool paper, near-black ink, one royal blue, soft semantic tints. */
+:root {
+  --bg: #fafbfd; --surface: #ffffff; --surface2: #f2f4f8; --ink: #0b0d12; --mute: #596172; --faint: #8b93a3; --line: #e5e8ee;
+  --blue: #2358e6; --blue-ink: #ffffff; --blue-soft: #e8eeff; --dark: #0a0a0c; --dark-ink: #ffffff;
+  --green: #11764a; --green-soft: #e0f4ea; --amber: #94580a; --amber-soft: #fff0d3; --red: #c0301d; --red-soft: #fde8e4;
+  --violet: #6538cf; --violet-soft: #eee8fd; --slate: #4a5363; --slate-soft: #eceff4;
+  color-scheme: light;
+}
+[data-theme="dark"] {
+  --bg: #080a0f; --surface: #10131a; --surface2: #181c25; --ink: #eef1f6; --mute: #a3acbc; --faint: #707a8c; --line: #232938;
+  --blue: #7099ff; --blue-ink: #07102b; --blue-soft: #15204a; --dark: #f1f3f8; --dark-ink: #0a0a0c;
+  --green: #70d19a; --green-soft: #12301f; --amber: #f0bf6a; --amber-soft: #362809; --red: #ff9380; --red-soft: #3a1c17;
+  --violet: #b59cff; --violet-soft: #231b46; --slate: #aab3c3; --slate-soft: #1d2230;
+  color-scheme: dark;
+}
+@theme inline {
+  --color-bg: var(--bg); --color-surface: var(--surface); --color-surface2: var(--surface2); --color-ink: var(--ink); --color-mute: var(--mute);
+  --color-faint: var(--faint); --color-line: var(--line); --color-blue: var(--blue); --color-blue-ink: var(--blue-ink); --color-blue-soft: var(--blue-soft);
+  --color-dark: var(--dark); --color-dark-ink: var(--dark-ink); --color-green: var(--green); --color-green-soft: var(--green-soft);
+  --color-amber: var(--amber); --color-amber-soft: var(--amber-soft); --color-red: var(--red); --color-red-soft: var(--red-soft);
+  --color-violet: var(--violet); --color-violet-soft: var(--violet-soft); --color-slate: var(--slate); --color-slate-soft: var(--slate-soft);
+  --font-display: "Cormorant Garamond", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --font-script: "Pinyon Script", "Snell Roundhand", "Brush Script MT", cursive;
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+@layer base {
+html { scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 96px); scroll-behavior: smooth; }
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--font-sans); line-height: 1.55; -webkit-font-smoothing: antialiased;
+  padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+h1, h2, h3 { font-family: var(--font-display); font-weight: 500; letter-spacing: -0.02em; font-variant-numeric: lining-nums; font-feature-settings: "lnum" 1; }
+.font-display { font-variant-numeric: lining-nums; font-feature-settings: "lnum" 1; }
+}
+:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+::selection { background: var(--blue-soft); }
+.drop::first-letter { font-family: var(--font-script); color: var(--blue); font-size: 1.45em; line-height: 0.6; padding-right: 0.04em; }
+@keyframes pulse-dot { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: .45; transform: scale(.8); } }
+.pulse-dot { animation: pulse-dot 2s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; scroll-behavior: auto !important; } }
