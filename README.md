@@ -1,5 +1,15 @@
 # CivicResolve
 
+🏛️ CivicResolve
+Modern Civic Grievance Redressal, SLA Governance & Telemetry Platform
+A production-hardened, full-stack grievance redressal platform engineered for radical administrative transparency, automated SLA governance, and a friction-free citizen & student experience.
+
+Live Demo React 19 TypeScript Strict Node.js Express tRPC v11 Drizzle ORM SQLite WAL Recharts Tailwind CSS v4 Tests Passing Docker Ready License MIT
+
+
+🌐 Live Production Deployment
+https://civicresolve-h5bt.onrender.com/
+
 Online grievance redressal. Citizens file and track concerns **without an account**; departments work them through an audited workflow with statutory deadlines; administrators see performance and manage the catalog.
 
 **Stack:** React 19 · Vite · Tailwind v4 · wouter · TanStack Query · Express · tRPC · Drizzle ORM · SQLite · Vitest · Docker.
