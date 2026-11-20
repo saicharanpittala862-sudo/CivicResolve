@@ -1,7 +1,47 @@
 # CivicResolve
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/49bf4f92-826b-4e2c-ae71-e1849dab01f6" />
+<div align="center">
 
+# 🏛️ CivicResolve
+### Modern Civic Grievance Redressal, SLA Governance & Telemetry Platform
+
+*A production-hardened, full-stack grievance redressal platform engineered for radical administrative transparency, automated SLA governance, and a friction-free citizen & student experience.*
+
+---
+
+[![Live Demo](https://img.shields.io/badge/Live_Demo-civicresolve--h5bt.onrender.com-00C7B7?style=for-the-badge&logo=render&logoColor=white)](https://civicresolve-h5bt.onrender.com/)
+[![React 19](https://img.shields.io/badge/React-19.2-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
+[![TypeScript Strict](https://img.shields.io/badge/TypeScript-5.9_Strict-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-v20+-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![Express](https://img.shields.io/badge/Express-4.22_Patched-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
+[![tRPC v11](https://img.shields.io/badge/tRPC-v11.8-2596BE?style=for-the-badge&logo=trpc&logoColor=white)](https://trpc.io/)
+[![Drizzle ORM](https://img.shields.io/badge/Drizzle_ORM-0.45-C5F74F?style=for-the-badge&logo=drizzle&logoColor=black)](https://orm.drizzle.team/)
+[![SQLite WAL](https://img.shields.io/badge/SQLite_3-libSQL_WAL-003B57?style=for-the-badge&logo=sqlite&logoColor=white)](https://sqlite.org/)
+[![Recharts](https://img.shields.io/badge/Recharts-v3.10-22c55e?style=for-the-badge)](https://recharts.org/)
+[![Tailwind CSS v4](https://img.shields.io/badge/Tailwind_CSS-v4.1-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Tests Passing](https://img.shields.io/badge/Vitest-104%2F104_Passing-10B981?style=for-the-badge&logo=vitest&logoColor=white)](https://vitest.dev/)
+[![Docker Ready](https://img.shields.io/badge/Docker-Containerized-2496ED?style=for-the-badge&logo=docker&logoColor=white)](Dockerfile)
+[![License MIT](https://img.shields.io/badge/License-MIT-6366F1?style=for-the-badge)](LICENSE)
+
+<br/>
+
+### 🌐 Live Production Deployment
+### [https://civicresolve-h5bt.onrender.com/](https://civicresolve-h5bt.onrender.com/)
+
+[Live Demo](#-live-demo--interactive-walkthrough) •
+[Executive Summary](#-executive-summary) •
+[Visual System Walkthrough](#-visual-system-walkthrough-annotated-architecture-gallery) •
+[Core Innovations](#-core-capabilities--problem-solving) •
+[System Architecture](#-system-architecture--engineering-design) •
+[Workflow & SLA Engine](#-grievance-lifecycle--sla-engine) •
+[Security Architecture](#-security-architecture--hardening-specifications) •
+[Demo & Viva Guide](#-submission-demo-path--viva-guide) •
+[Quick Start](#-quick-start--installation) •
+[Docker Deployment](#-docker--containerized-deployment)
+
+</div>
+
+---
 
 Online grievance redressal. Citizens file and track concerns **without an account**; departments work them through an audited workflow with statutory deadlines; administrators see performance and manage the catalog.
 
